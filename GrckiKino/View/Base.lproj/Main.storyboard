@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Draw Raunds View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DrawRaundsViewController" customModule="GrckiKino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BgJ-BB-kZr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="gDp-OU-lyO" customClass="DrawRoundsTableViewCell" customModule="GrckiKino" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gDp-OU-lyO" id="FcR-aD-zIe">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS4-gF-8aC">
+                                                    <rect key="frame" x="40" y="26" width="38" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHY-3j-5Aa">
+                                                    <rect key="frame" x="330" y="26" width="44" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SS4-gF-8aC" firstAttribute="top" secondItem="FcR-aD-zIe" secondAttribute="topMargin" constant="15" id="2PI-5l-uLL"/>
+                                                <constraint firstItem="SS4-gF-8aC" firstAttribute="leading" secondItem="FcR-aD-zIe" secondAttribute="leadingMargin" constant="20" id="EER-zg-mRg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="SS4-gF-8aC" secondAttribute="bottom" constant="15" id="Pe7-4N-lOM"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="oHY-3j-5Aa" secondAttribute="trailing" constant="20" id="UiF-FO-YPJ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="oHY-3j-5Aa" secondAttribute="bottom" constant="15" id="gmu-qS-cIv"/>
+                                                <constraint firstItem="oHY-3j-5Aa" firstAttribute="top" secondItem="FcR-aD-zIe" secondAttribute="topMargin" constant="15" id="lSx-Y7-TRK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="drawTimeLabel" destination="SS4-gF-8aC" id="D0I-EW-JOS"/>
+                                            <outlet property="timerLabel" destination="oHY-3j-5Aa" id="0pN-LG-VIc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="K2h-3B-Msd"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gMc-al-DtB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BgJ-BB-kZr" secondAttribute="trailing" id="SEK-5S-Hld"/>
+                            <constraint firstItem="BgJ-BB-kZr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UV2-Ie-SGt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BgJ-BB-kZr" secondAttribute="bottom" id="fkk-SA-kTq"/>
+                            <constraint firstItem="BgJ-BB-kZr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="usS-oZ-qnZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drawTableView" destination="BgJ-BB-kZr" id="nHM-aI-Jpv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

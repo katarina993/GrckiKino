@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E78184625C1988F006EC330 /* DrawRoundsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78184525C1988F006EC330 /* DrawRoundsTableViewCell.swift */; };
+		6E78184B25C19AF2006EC330 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78184A25C19AF2006EC330 /* DataController.swift */; };
+		6E78185125C1AA7E006EC330 /* DataController+Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78185025C1AA7E006EC330 /* DataController+Upcoming.swift */; };
+		6E78185425C1ACED006EC330 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78185325C1ACED006EC330 /* Draw.swift */; };
+		6E78185725C1AD9A006EC330 /* AddOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78185625C1AD9A006EC330 /* AddOn.swift */; };
+		6E78185A25C1AE61006EC330 /* PricePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78185925C1AE61006EC330 /* PricePoint.swift */; };
+		6E78185D25C1B068006EC330 /* PrizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78185C25C1B068006EC330 /* PrizeCategory.swift */; };
+		6E78186025C1B1AB006EC330 /* WagerStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78185F25C1B1AB006EC330 /* WagerStatistic.swift */; };
 		6EB41E9425C1820000C5730A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41E9325C1820000C5730A /* AppDelegate.swift */; };
 		6EB41E9625C1820000C5730A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41E9525C1820000C5730A /* SceneDelegate.swift */; };
-		6EB41E9825C1820100C5730A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41E9725C1820000C5730A /* ViewController.swift */; };
+		6EB41E9825C1820100C5730A /* DrawRoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41E9725C1820000C5730A /* DrawRoundsViewController.swift */; };
 		6EB41E9B25C1820100C5730A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB41E9925C1820100C5730A /* Main.storyboard */; };
 		6EB41E9D25C1820400C5730A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB41E9C25C1820400C5730A /* Assets.xcassets */; };
 		6EB41EA025C1820400C5730A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB41E9E25C1820400C5730A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E78184525C1988F006EC330 /* DrawRoundsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRoundsTableViewCell.swift; sourceTree = "<group>"; };
+		6E78184A25C19AF2006EC330 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		6E78185025C1AA7E006EC330 /* DataController+Upcoming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController+Upcoming.swift"; sourceTree = "<group>"; };
+		6E78185325C1ACED006EC330 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		6E78185625C1AD9A006EC330 /* AddOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOn.swift; sourceTree = "<group>"; };
+		6E78185925C1AE61006EC330 /* PricePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricePoint.swift; sourceTree = "<group>"; };
+		6E78185C25C1B068006EC330 /* PrizeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeCategory.swift; sourceTree = "<group>"; };
+		6E78185F25C1B1AB006EC330 /* WagerStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WagerStatistic.swift; sourceTree = "<group>"; };
 		6EB41E9025C1820000C5730A /* GrckiKino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrckiKino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB41E9325C1820000C5730A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EB41E9525C1820000C5730A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6EB41E9725C1820000C5730A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6EB41E9725C1820000C5730A /* DrawRoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRoundsViewController.swift; sourceTree = "<group>"; };
 		6EB41E9A25C1820100C5730A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EB41E9C25C1820400C5730A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EB41E9F25C1820400C5730A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E78184825C19A42006EC330 /* DataController */ = {
+			isa = PBXGroup;
+			children = (
+				6E78184A25C19AF2006EC330 /* DataController.swift */,
+				6E78185025C1AA7E006EC330 /* DataController+Upcoming.swift */,
+			);
+			path = DataController;
+			sourceTree = "<group>";
+		};
 		6EB41E8725C1820000C5730A = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +81,12 @@
 		6EB41E9225C1820000C5730A /* GrckiKino */ = {
 			isa = PBXGroup;
 			children = (
+				6E78184825C19A42006EC330 /* DataController */,
 				6EB41EAB25C1823B00C5730A /* Controller */,
 				6EB41EAA25C1822900C5730A /* View */,
 				6EB41EA825C1821600C5730A /* Model */,
 				6EB41E9325C1820000C5730A /* AppDelegate.swift */,
 				6EB41E9525C1820000C5730A /* SceneDelegate.swift */,
-				6EB41E9725C1820000C5730A /* ViewController.swift */,
-				6EB41E9925C1820100C5730A /* Main.storyboard */,
 				6EB41E9C25C1820400C5730A /* Assets.xcassets */,
 				6EB41E9E25C1820400C5730A /* LaunchScreen.storyboard */,
 				6EB41EA125C1820400C5730A /* Info.plist */,
@@ -73,6 +97,11 @@
 		6EB41EA825C1821600C5730A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6E78185325C1ACED006EC330 /* Draw.swift */,
+				6E78185625C1AD9A006EC330 /* AddOn.swift */,
+				6E78185925C1AE61006EC330 /* PricePoint.swift */,
+				6E78185C25C1B068006EC330 /* PrizeCategory.swift */,
+				6E78185F25C1B1AB006EC330 /* WagerStatistic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -80,6 +109,8 @@
 		6EB41EAA25C1822900C5730A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6EB41E9925C1820100C5730A /* Main.storyboard */,
+				6E78184525C1988F006EC330 /* DrawRoundsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,6 +118,7 @@
 		6EB41EAB25C1823B00C5730A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6EB41E9725C1820000C5730A /* DrawRoundsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,9 +193,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EB41E9825C1820100C5730A /* ViewController.swift in Sources */,
+				6E78185425C1ACED006EC330 /* Draw.swift in Sources */,
+				6E78184B25C19AF2006EC330 /* DataController.swift in Sources */,
+				6E78184625C1988F006EC330 /* DrawRoundsTableViewCell.swift in Sources */,
+				6EB41E9825C1820100C5730A /* DrawRoundsViewController.swift in Sources */,
+				6E78186025C1B1AB006EC330 /* WagerStatistic.swift in Sources */,
+				6E78185D25C1B068006EC330 /* PrizeCategory.swift in Sources */,
+				6E78185725C1AD9A006EC330 /* AddOn.swift in Sources */,
 				6EB41E9425C1820000C5730A /* AppDelegate.swift in Sources */,
 				6EB41E9625C1820000C5730A /* SceneDelegate.swift in Sources */,
+				6E78185A25C1AE61006EC330 /* PricePoint.swift in Sources */,
+				6E78185125C1AA7E006EC330 /* DataController+Upcoming.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
