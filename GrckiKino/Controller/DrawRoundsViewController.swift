@@ -31,12 +31,18 @@ class DrawRaundsViewController: UIViewController, UITableViewDelegate, UITableVi
         return draws.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")as! DrawRoundsTableViewCell
         let draw = draws[indexPath.row]
         cell.drawTimeLabel.text = draw.getDrawTimeFormatted()
         cell.setupTimer(drawTime: draw.drawTime)
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(identifier: "gameRoundVC") as! GameRoundViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    
     }
 }
 
