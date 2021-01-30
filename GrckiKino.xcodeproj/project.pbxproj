@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E48450B25C58773001FE7E4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48450A25C58773001FE7E4 /* WebViewController.swift */; };
 		6E48C2C425C46C2200A5B73B /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48C2C325C46C2200A5B73B /* Circle.swift */; };
 		6E6CCA4425C2BF0500C463FA /* GameRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6CCA4325C2BF0500C463FA /* GameRoundViewController.swift */; };
 		6E6CCA4B25C2C8CC00C463FA /* GameRoundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6CCA4A25C2C8CC00C463FA /* GameRoundCollectionViewCell.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E48450A25C58773001FE7E4 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		6E48C2C325C46C2200A5B73B /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		6E6CCA4325C2BF0500C463FA /* GameRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoundViewController.swift; sourceTree = "<group>"; };
 		6E6CCA4A25C2C8CC00C463FA /* GameRoundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoundCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				6EB41E9725C1820000C5730A /* DrawRoundsViewController.swift */,
 				6E6CCA4325C2BF0500C463FA /* GameRoundViewController.swift */,
+				6E48450A25C58773001FE7E4 /* WebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E78185425C1ACED006EC330 /* Draw.swift in Sources */,
+				6E48450B25C58773001FE7E4 /* WebViewController.swift in Sources */,
 				6E78184B25C19AF2006EC330 /* DataController.swift in Sources */,
 				6E6CCA4B25C2C8CC00C463FA /* GameRoundCollectionViewCell.swift in Sources */,
 				6E6CCA4425C2BF0500C463FA /* GameRoundViewController.swift in Sources */,
