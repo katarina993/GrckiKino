@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6E48450B25C58773001FE7E4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48450A25C58773001FE7E4 /* WebViewController.swift */; };
+		6E48450E25C58DD5001FE7E4 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48450D25C58DD5001FE7E4 /* ResultViewController.swift */; };
+		6E48451425C5AF48001FE7E4 /* DataController+Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48451325C5AF48001FE7E4 /* DataController+Results.swift */; };
+		6E48451825C5BCF2001FE7E4 /* DrawResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48451725C5BCF2001FE7E4 /* DrawResult.swift */; };
+		6E48451B25C5BE01001FE7E4 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48451A25C5BE01001FE7E4 /* Sort.swift */; };
+		6E48451E25C5BE9F001FE7E4 /* DrawResultContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48451D25C5BE9F001FE7E4 /* DrawResultContent.swift */; };
+		6E48452125C5C043001FE7E4 /* WinningNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48452025C5C043001FE7E4 /* WinningNumber.swift */; };
+		6E48452425C5C1F4001FE7E4 /* Slidebet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48452325C5C1F4001FE7E4 /* Slidebet.swift */; };
+		6E48452D25C5E0BB001FE7E4 /* ResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48452C25C5E0BB001FE7E4 /* ResultCollectionViewCell.swift */; };
+		6E48453125C5F60D001FE7E4 /* DrawResultSectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48453025C5F60D001FE7E4 /* DrawResultSectionHeaderCollectionReusableView.swift */; };
+		6E48453425C5FE2A001FE7E4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48453325C5FE2A001FE7E4 /* Extensions.swift */; };
 		6E48C2C425C46C2200A5B73B /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48C2C325C46C2200A5B73B /* Circle.swift */; };
 		6E6CCA4425C2BF0500C463FA /* GameRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6CCA4325C2BF0500C463FA /* GameRoundViewController.swift */; };
 		6E6CCA4B25C2C8CC00C463FA /* GameRoundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6CCA4A25C2C8CC00C463FA /* GameRoundCollectionViewCell.swift */; };
 		6E6CCA5425C3105500C463FA /* NumberOfRoundAndQuotaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6CCA5325C3105500C463FA /* NumberOfRoundAndQuotaCollectionViewCell.swift */; };
-		6E6CCA5D25C34E2600C463FA /* DataController+DrawID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6CCA5C25C34E2600C463FA /* DataController+DrawID.swift */; };
 		6E6CCA6025C45A0800C463FA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6CCA5F25C45A0700C463FA /* Utils.swift */; };
 		6E78184625C1988F006EC330 /* DrawRoundsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78184525C1988F006EC330 /* DrawRoundsTableViewCell.swift */; };
 		6E78184B25C19AF2006EC330 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78184A25C19AF2006EC330 /* DataController.swift */; };
@@ -32,11 +41,20 @@
 
 /* Begin PBXFileReference section */
 		6E48450A25C58773001FE7E4 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		6E48450D25C58DD5001FE7E4 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		6E48451325C5AF48001FE7E4 /* DataController+Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController+Results.swift"; sourceTree = "<group>"; };
+		6E48451725C5BCF2001FE7E4 /* DrawResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawResult.swift; sourceTree = "<group>"; };
+		6E48451A25C5BE01001FE7E4 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		6E48451D25C5BE9F001FE7E4 /* DrawResultContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawResultContent.swift; sourceTree = "<group>"; };
+		6E48452025C5C043001FE7E4 /* WinningNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningNumber.swift; sourceTree = "<group>"; };
+		6E48452325C5C1F4001FE7E4 /* Slidebet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slidebet.swift; sourceTree = "<group>"; };
+		6E48452C25C5E0BB001FE7E4 /* ResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCollectionViewCell.swift; sourceTree = "<group>"; };
+		6E48453025C5F60D001FE7E4 /* DrawResultSectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawResultSectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		6E48453325C5FE2A001FE7E4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6E48C2C325C46C2200A5B73B /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		6E6CCA4325C2BF0500C463FA /* GameRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoundViewController.swift; sourceTree = "<group>"; };
 		6E6CCA4A25C2C8CC00C463FA /* GameRoundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoundCollectionViewCell.swift; sourceTree = "<group>"; };
 		6E6CCA5325C3105500C463FA /* NumberOfRoundAndQuotaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfRoundAndQuotaCollectionViewCell.swift; sourceTree = "<group>"; };
-		6E6CCA5C25C34E2600C463FA /* DataController+DrawID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController+DrawID.swift"; sourceTree = "<group>"; };
 		6E6CCA5F25C45A0700C463FA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		6E78184525C1988F006EC330 /* DrawRoundsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRoundsTableViewCell.swift; sourceTree = "<group>"; };
 		6E78184A25C19AF2006EC330 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -72,7 +90,7 @@
 			children = (
 				6E78184A25C19AF2006EC330 /* DataController.swift */,
 				6E78185025C1AA7E006EC330 /* DataController+Upcoming.swift */,
-				6E6CCA5C25C34E2600C463FA /* DataController+DrawID.swift */,
+				6E48451325C5AF48001FE7E4 /* DataController+Results.swift */,
 			);
 			path = DataController;
 			sourceTree = "<group>";
@@ -106,6 +124,7 @@
 				6EB41E9E25C1820400C5730A /* LaunchScreen.storyboard */,
 				6EB41EA125C1820400C5730A /* Info.plist */,
 				6E6CCA5F25C45A0700C463FA /* Utils.swift */,
+				6E48453325C5FE2A001FE7E4 /* Extensions.swift */,
 			);
 			path = GrckiKino;
 			sourceTree = "<group>";
@@ -119,6 +138,11 @@
 				6E78185C25C1B068006EC330 /* PrizeCategory.swift */,
 				6E78185F25C1B1AB006EC330 /* WagerStatistic.swift */,
 				6E48C2C325C46C2200A5B73B /* Circle.swift */,
+				6E48451725C5BCF2001FE7E4 /* DrawResult.swift */,
+				6E48451A25C5BE01001FE7E4 /* Sort.swift */,
+				6E48451D25C5BE9F001FE7E4 /* DrawResultContent.swift */,
+				6E48452025C5C043001FE7E4 /* WinningNumber.swift */,
+				6E48452325C5C1F4001FE7E4 /* Slidebet.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,6 +154,8 @@
 				6E78184525C1988F006EC330 /* DrawRoundsTableViewCell.swift */,
 				6E6CCA4A25C2C8CC00C463FA /* GameRoundCollectionViewCell.swift */,
 				6E6CCA5325C3105500C463FA /* NumberOfRoundAndQuotaCollectionViewCell.swift */,
+				6E48452C25C5E0BB001FE7E4 /* ResultCollectionViewCell.swift */,
+				6E48453025C5F60D001FE7E4 /* DrawResultSectionHeaderCollectionReusableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -140,6 +166,7 @@
 				6EB41E9725C1820000C5730A /* DrawRoundsViewController.swift */,
 				6E6CCA4325C2BF0500C463FA /* GameRoundViewController.swift */,
 				6E48450A25C58773001FE7E4 /* WebViewController.swift */,
+				6E48450D25C58DD5001FE7E4 /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,18 +242,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E78185425C1ACED006EC330 /* Draw.swift in Sources */,
+				6E48453425C5FE2A001FE7E4 /* Extensions.swift in Sources */,
+				6E48453125C5F60D001FE7E4 /* DrawResultSectionHeaderCollectionReusableView.swift in Sources */,
+				6E48450E25C58DD5001FE7E4 /* ResultViewController.swift in Sources */,
 				6E48450B25C58773001FE7E4 /* WebViewController.swift in Sources */,
 				6E78184B25C19AF2006EC330 /* DataController.swift in Sources */,
 				6E6CCA4B25C2C8CC00C463FA /* GameRoundCollectionViewCell.swift in Sources */,
 				6E6CCA4425C2BF0500C463FA /* GameRoundViewController.swift in Sources */,
 				6E48C2C425C46C2200A5B73B /* Circle.swift in Sources */,
+				6E48451E25C5BE9F001FE7E4 /* DrawResultContent.swift in Sources */,
+				6E48451B25C5BE01001FE7E4 /* Sort.swift in Sources */,
+				6E48452125C5C043001FE7E4 /* WinningNumber.swift in Sources */,
 				6E78184625C1988F006EC330 /* DrawRoundsTableViewCell.swift in Sources */,
+				6E48452D25C5E0BB001FE7E4 /* ResultCollectionViewCell.swift in Sources */,
 				6EB41E9825C1820100C5730A /* DrawRoundsViewController.swift in Sources */,
+				6E48452425C5C1F4001FE7E4 /* Slidebet.swift in Sources */,
+				6E48451825C5BCF2001FE7E4 /* DrawResult.swift in Sources */,
 				6E6CCA5425C3105500C463FA /* NumberOfRoundAndQuotaCollectionViewCell.swift in Sources */,
+				6E48451425C5AF48001FE7E4 /* DataController+Results.swift in Sources */,
 				6E6CCA6025C45A0800C463FA /* Utils.swift in Sources */,
 				6E78186025C1B1AB006EC330 /* WagerStatistic.swift in Sources */,
 				6E78185D25C1B068006EC330 /* PrizeCategory.swift in Sources */,
-				6E6CCA5D25C34E2600C463FA /* DataController+DrawID.swift in Sources */,
 				6E78185725C1AD9A006EC330 /* AddOn.swift in Sources */,
 				6EB41E9425C1820000C5730A /* AppDelegate.swift in Sources */,
 				6EB41E9625C1820000C5730A /* SceneDelegate.swift in Sources */,

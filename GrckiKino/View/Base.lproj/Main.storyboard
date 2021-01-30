@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y0d-nC-6rb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="da5-R4-amd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -25,6 +25,121 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y8S-Q5-br4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="16" y="94"/>
+        </scene>
+        <!--Rezultati-->
+        <scene sceneID="2vu-yV-yf7">
+            <objects>
+                <navigationController id="wQV-TK-bug" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Rezultati" image="filemenu.and.selection" catalog="system" id="XYL-Af-W9a"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xZn-sc-e6n">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BaJ-gh-2RX" kind="relationship" relationship="rootViewController" id="p3z-aZ-qYx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lv4-Ef-wzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="844"/>
+        </scene>
+        <!--Rezultati-->
+        <scene sceneID="I3O-YZ-PYS">
+            <objects>
+                <viewController id="BaJ-gh-2RX" customClass="ResultViewController" customModule="GrckiKino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6VA-3f-wHn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="khP-6T-IgX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="4" minimumInteritemSpacing="4" id="b6l-5x-gY1">
+                                    <size key="itemSize" width="70" height="70"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ResultCollectionViewCell" id="Itc-1F-fyl" customClass="ResultCollectionViewCell" customModule="GrckiKino" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aWE-t6-Ibe">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i65-ld-MBn" customClass="Circle" customModule="GrckiKino" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="for-dd-Mu2">
+                                                    <rect key="frame" x="14.5" y="25" width="41.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="for-dd-Mu2" firstAttribute="centerX" secondItem="aWE-t6-Ibe" secondAttribute="centerX" id="2QV-pT-EbY"/>
+                                                <constraint firstAttribute="bottom" secondItem="i65-ld-MBn" secondAttribute="bottom" id="66n-PU-MDI"/>
+                                                <constraint firstAttribute="trailing" secondItem="i65-ld-MBn" secondAttribute="trailing" id="Sh3-La-cXA"/>
+                                                <constraint firstItem="for-dd-Mu2" firstAttribute="centerY" secondItem="aWE-t6-Ibe" secondAttribute="centerY" id="YGN-Bh-yxy"/>
+                                                <constraint firstItem="i65-ld-MBn" firstAttribute="top" secondItem="aWE-t6-Ibe" secondAttribute="top" id="hRh-mp-INM"/>
+                                                <constraint firstItem="i65-ld-MBn" firstAttribute="leading" secondItem="aWE-t6-Ibe" secondAttribute="leading" id="ySA-h5-I2H"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="70" height="70"/>
+                                        <connections>
+                                            <outlet property="circleBackgroundView" destination="i65-ld-MBn" id="xGL-4B-HfS"/>
+                                            <outlet property="winningNumberLabel" destination="for-dd-Mu2" id="Fhd-5s-W0L"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="DrawResultHeaderCV" id="Lgo-Ot-Dhm" customClass="DrawResultSectionHeaderCollectionReusableView" customModule="GrckiKino" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whf-S6-Y9U">
+                                            <rect key="frame" x="18" y="10" width="378" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Whf-S6-Y9U" secondAttribute="trailing" constant="10" id="GHn-fn-a79"/>
+                                        <constraint firstItem="Whf-S6-Y9U" firstAttribute="leading" secondItem="Lgo-Ot-Dhm" secondAttribute="leadingMargin" constant="10" id="b2B-XT-D1O"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Whf-S6-Y9U" secondAttribute="bottom" constant="2" id="hUE-vH-mKr"/>
+                                        <constraint firstItem="Whf-S6-Y9U" firstAttribute="top" secondItem="Lgo-Ot-Dhm" secondAttribute="topMargin" constant="2" id="iwe-Aw-yM0"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="headerLabel" destination="Whf-S6-Y9U" id="w5P-3g-KSC"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="BaJ-gh-2RX" id="caC-eR-HlH"/>
+                                    <outlet property="delegate" destination="BaJ-gh-2RX" id="RGg-b1-uHL"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fmh-e7-ufT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fmh-e7-ufT" firstAttribute="bottom" secondItem="khP-6T-IgX" secondAttribute="bottom" id="Fwb-Tl-Yi9"/>
+                            <constraint firstItem="khP-6T-IgX" firstAttribute="leading" secondItem="Fmh-e7-ufT" secondAttribute="leading" id="Q4y-NB-v6r"/>
+                            <constraint firstItem="Fmh-e7-ufT" firstAttribute="trailing" secondItem="khP-6T-IgX" secondAttribute="trailing" id="rXt-Q9-bF1"/>
+                            <constraint firstItem="khP-6T-IgX" firstAttribute="top" secondItem="Fmh-e7-ufT" secondAttribute="top" id="uoO-fd-Z5b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rezultati" id="AvJ-Fr-LsF"/>
+                    <connections>
+                        <outlet property="resultCollectionView" destination="khP-6T-IgX" id="vin-zQ-FMS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edg-5C-CoF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966.66666666666674" y="843.75"/>
         </scene>
         <!--Izvlačenje-->
         <scene sceneID="oLR-TI-5UT">
@@ -70,7 +185,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BgJ-BB-kZr">
-                                <rect key="frame" x="0.0" y="116.5" width="414" height="745.5"/>
+                                <rect key="frame" x="0.0" y="116.5" width="414" height="696.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="77" id="gDp-OU-lyO" customClass="DrawRoundsTableViewCell" customModule="GrckiKino" customModuleProvider="target">
@@ -82,18 +197,12 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS4-gF-8aC">
                                                     <rect key="frame" x="40" y="15" width="38" height="47"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="mZL-uc-ycN"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHY-3j-5Aa">
                                                     <rect key="frame" x="330" y="15" width="44" height="47"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="NSE-bO-Dhd"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -136,7 +245,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstItem="202-Xv-aqF" firstAttribute="top" secondItem="quO-R6-Q2c" secondAttribute="top" constant="4" id="04K-D2-kFd"/>
                                     <constraint firstItem="9fU-Xw-hEM" firstAttribute="top" secondItem="quO-R6-Q2c" secondAttribute="top" constant="4" id="0dj-nd-LUe"/>
@@ -170,12 +279,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+            <point key="canvasLocation" x="967" y="-630"/>
         </scene>
         <!--Game Round View Controller-->
         <scene sceneID="dcz-Tm-rCJ">
             <objects>
-                <viewController storyboardIdentifier="gameRoundVC" id="PRy-FP-DM4" customClass="GameRoundViewController" customModule="GrckiKino" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameRoundVC" hidesBottomBarWhenPushed="YES" id="PRy-FP-DM4" customClass="GameRoundViewController" customModule="GrckiKino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="selectNumerVC" id="t1a-5m-ZIz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -357,7 +466,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Rj-iX-Od8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886.9565217391305" y="93.75"/>
+            <point key="canvasLocation" x="1907" y="-630"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eLv-IO-hD8">
@@ -390,12 +499,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vsj-1J-sl2"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ONw-92-fxO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omI-vT-ApT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+            <point key="canvasLocation" x="16" y="-630"/>
         </scene>
     </scenes>
     <resources>

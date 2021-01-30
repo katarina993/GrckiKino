@@ -85,7 +85,6 @@ class GameRoundViewController: UIViewController, UICollectionViewDelegate, UICol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == self.secondCollectionView {
             let ball = ballNumbers[indexPath.item]
-            print(ball)
             let cell = collectionView.cellForItem(at: indexPath) as? GameRoundCollectionViewCell
             if selectedBalls.contains(ball) {
                 let index = selectedBalls.firstIndex(of: ball)

@@ -1,25 +1,25 @@
 //
-//  Draw.swift
+//  DrawResponse.swift
 //  GrckiKino
 //
-//  Created by Katarina Tomic on 1/27/21.
+//  Created by Katarina Tomic on 1/30/21.
 //
 
 import Foundation
 
-class Draw: Codable {
+class DrawResultContent: Codable {
     
     var gameId: Int?
     var drawId: Int?
     var drawTime: Int
-    var status: String
-    var drawBreak: Int
-    var visualDraw: Int
+    var status: String?
+    var drawBreak: Int?
+    var visualDraw: Int?
     var pricePoints: PricePoint?
+    var winningNumbers: WinningNumber
     var prizeCategories: [PrizeCategory]?
-    var wagerStatistics: WagerStatistic
     
-    init(gameId: Int?, drawId: Int?, drawTime: Int, status: String, drawBreak: Int, visualDraw: Int, pricePoints: PricePoint?, prizeCategories:[PrizeCategory]?, wagerStatistics:WagerStatistic) {
+    init(gameId: Int?, drawId: Int?, drawTime: Int, status: String, drawBreak: Int, visualDraw: Int, pricePoints: PricePoint?, prizeCategories:[PrizeCategory]?, winningNumbers:WinningNumber) {
         self.gameId = gameId
         self.drawId = drawId
         self.drawTime = drawTime
@@ -28,7 +28,7 @@ class Draw: Codable {
         self.visualDraw = visualDraw
         self.pricePoints = pricePoints
         self.prizeCategories = prizeCategories
-        self.wagerStatistics = wagerStatistics
+        self.winningNumbers = winningNumbers
     }
     
     func getDrawTimeFormatted() -> String {
@@ -39,10 +39,5 @@ class Draw: Codable {
         formatter.dateFormat = "HH:mm"
         let dateStr = formatter.string(from: date)
         return dateStr
-    }
-    
-    func isExipred() -> Bool {
-        //if trenutno vreme  >= self.drawTime
-        return true
     }
 }
