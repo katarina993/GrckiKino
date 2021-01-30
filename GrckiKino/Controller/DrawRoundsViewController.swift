@@ -22,7 +22,7 @@ class DrawRaundsViewController: UIViewController, UITableViewDelegate, UITableVi
                     self.drawTableView.reloadData()
                 }
             } else {
-                //error
+                //show Alert "Oops: Something went wrong!"
             }
         }
     }
@@ -40,8 +40,14 @@ class DrawRaundsViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let draw = draws[indexPath.row]
+//        if draw.isExipred() {
+//            //show Alert "Time is exipred: Sorry, but you cannot place your bet!"
+//            return
+//        }
         let vc = storyboard?.instantiateViewController(identifier: "gameRoundVC") as! GameRoundViewController
         self.navigationController?.pushViewController(vc, animated: true)
+        vc.draw = draw
     
     }
 }

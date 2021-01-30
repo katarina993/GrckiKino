@@ -9,8 +9,8 @@ import Foundation
 
 class Draw: Codable {
     
-    var gameID: Int?
-    var drawID: Int?
+    var gameId: Int?
+    var drawId: Int?
     var drawTime: Int
     var status: String
     var drawBreak: Int
@@ -19,9 +19,9 @@ class Draw: Codable {
     var prizeCategories: [PrizeCategory]?
     var wagerStatistics: WagerStatistic
     
-    init(gameID: Int?, drawID: Int?, drawTime: Int, status: String, drawBreak: Int, visualDraw: Int, pricePoints: PricePoint?, prizeCategories:[PrizeCategory]?, wagerStatistics:WagerStatistic) {
-        self.gameID = gameID
-        self.drawID = drawID
+    init(gameId: Int?, drawId: Int?, drawTime: Int, status: String, drawBreak: Int, visualDraw: Int, pricePoints: PricePoint?, prizeCategories:[PrizeCategory]?, wagerStatistics:WagerStatistic) {
+        self.gameId = gameId
+        self.drawId = drawId
         self.drawTime = drawTime
         self.status = status
         self.drawBreak = drawBreak
@@ -40,5 +40,11 @@ class Draw: Codable {
         let dateStr = formatter.string(from: date)
         print(dateStr)
         return dateStr
+    }
+    
+    
+    func isExipred() -> Bool {
+        //if trenutno vreme  >= self.drawTime
+        return true
     }
 }
