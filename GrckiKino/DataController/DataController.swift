@@ -11,7 +11,7 @@ let baseUrl = "https://api.opap.gr/draws/v3.0"
 
 enum HTTPMethod: String {
     case get = "GET"
-    case post = "PUT"
+    case post = "POST"
 }
 
 enum HTTPStatusCode {
