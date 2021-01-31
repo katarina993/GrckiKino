@@ -42,7 +42,15 @@ class Draw: Codable {
     }
     
     func isExipred() -> Bool {
-        //if trenutno vreme  >= self.drawTime
-        return true
+        let nowDate = Date()
+        let epochTime = TimeInterval(drawTime) / 1000
+        let drawDate = Date(timeIntervalSince1970: epochTime)
+
+        if nowDate >= drawDate {
+            return true
+        } else {
+            return false
+        }
+        
     }
 }

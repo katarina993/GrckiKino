@@ -16,8 +16,7 @@ extension DataController {
                 let draw = try! JSONDecoder().decode([Draw].self, from: data!)
                 completion(draw)
             } else {
-                //TODO: handle error
-               completion(nil)
+                completion(nil)
             }
         }
     }

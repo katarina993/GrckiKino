@@ -13,7 +13,7 @@ class AddOn: Codable {
     var gameType: String?
     
     init(amount: Double?, gameType: String?) {
-      self.amount = amount
-      self.gameType = gameType
+        self.amount = amount
+        self.gameType = gameType
     }
 }

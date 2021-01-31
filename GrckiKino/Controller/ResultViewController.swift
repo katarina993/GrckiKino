@@ -11,7 +11,7 @@ class ResultViewController: UIViewController {
     
     var drawsResults = [DrawResultContent]()
     @IBOutlet weak var resultCollectionView: UICollectionView!
-    
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +23,21 @@ class ResultViewController: UIViewController {
         let dateFrom = dateFormatter.string(from: dateYesterday)
         let dateTo = dateFormatter.string(from: dateYesterday)
 
+        self.spinner.startAnimating()
         DataController.shared.getResult(dateFrom: dateFrom, dateTo: dateTo) { drawsResults in
             if drawsResults != nil {
                 self.drawsResults = drawsResults!
                 DispatchQueue.main.sync {
                     self.resultCollectionView.reloadData()
+                    self.spinner.stopAnimating()
                 }
             } else {
-                //show Alert "Oops: Something went wrong!"
+                DispatchQueue.main.sync {
+                    self.spinner.stopAnimating()
+                    let alert = UIAlertController(title: "Oops", message: "Something went wrong!", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
                 
             }
             

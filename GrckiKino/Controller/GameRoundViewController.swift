@@ -16,6 +16,7 @@ class GameRoundViewController: UIViewController, UICollectionViewDelegate, UICol
     @IBOutlet weak var drawTimeLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var selectedBallNumbersLabel: UILabel!
+   
     var draw: Draw?
     let ballNumbers = Array(1...80)
     let quotaValues = [1.5, 3.4, 4.0, 2.3, 3.9, 2.2, 1.76]
@@ -33,7 +34,7 @@ class GameRoundViewController: UIViewController, UICollectionViewDelegate, UICol
         if draw == nil {
             return
         }
-        self.drawIDLabel.text = "Broj kola: \(draw!.drawId!))"
+        self.drawIDLabel.text = "Broj kola: \(draw!.drawId!)"
         self.drawTimeLabel.text = "Vreme izvlačenja: \(draw!.getDrawTimeFormatted())"
         self.timerLabel.text = "Preostalo vreme za uplatu: \(setupTimer(drawTime: draw!.drawTime))"
     }

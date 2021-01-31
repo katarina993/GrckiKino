@@ -17,12 +17,10 @@ extension DataController {
                 let content = draw.content
                 completion(content)
             } else {
-                //TODO: handle error
-               completion(nil)
+                completion(nil)
             }
         }
     }
    
-    
 }
 

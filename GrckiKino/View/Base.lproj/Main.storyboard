@@ -122,12 +122,17 @@
                                     <outlet property="delegate" destination="BaJ-gh-2RX" id="RGg-b1-uHL"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="DZL-Y7-f3K">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fmh-e7-ufT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DZL-Y7-f3K" firstAttribute="centerX" secondItem="6VA-3f-wHn" secondAttribute="centerX" id="61b-PV-kyU"/>
                             <constraint firstItem="Fmh-e7-ufT" firstAttribute="bottom" secondItem="khP-6T-IgX" secondAttribute="bottom" id="Fwb-Tl-Yi9"/>
                             <constraint firstItem="khP-6T-IgX" firstAttribute="leading" secondItem="Fmh-e7-ufT" secondAttribute="leading" id="Q4y-NB-v6r"/>
+                            <constraint firstItem="DZL-Y7-f3K" firstAttribute="centerY" secondItem="6VA-3f-wHn" secondAttribute="centerY" id="X2y-dj-dYA"/>
                             <constraint firstItem="Fmh-e7-ufT" firstAttribute="trailing" secondItem="khP-6T-IgX" secondAttribute="trailing" id="rXt-Q9-bF1"/>
                             <constraint firstItem="khP-6T-IgX" firstAttribute="top" secondItem="Fmh-e7-ufT" secondAttribute="top" id="uoO-fd-Z5b"/>
                         </constraints>
@@ -135,6 +140,7 @@
                     <navigationItem key="navigationItem" title="Rezultati" id="AvJ-Fr-LsF"/>
                     <connections>
                         <outlet property="resultCollectionView" destination="khP-6T-IgX" id="vin-zQ-FMS"/>
+                        <outlet property="spinner" destination="DZL-Y7-f3K" id="zYi-rZ-gtp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edg-5C-CoF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -144,7 +150,6 @@
         <!--Izvlačenje-->
         <scene sceneID="oLR-TI-5UT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pPw-mW-FaX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Chi-NV-gB1" customClass="WebViewController" customModule="GrckiKino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8hm-St-OmS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -173,6 +178,7 @@
                         <outlet property="webView" destination="Add-4m-mPM" id="e87-be-qxp"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pPw-mW-FaX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="967" y="94"/>
         </scene>
@@ -229,6 +235,9 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gMc-al-DtB"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="p98-bX-5e2">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quO-R6-Q2c">
                                 <rect key="frame" x="0.0" y="88" width="414" height="28.5"/>
                                 <subviews>
@@ -262,7 +271,9 @@
                         <constraints>
                             <constraint firstItem="BgJ-BB-kZr" firstAttribute="top" secondItem="quO-R6-Q2c" secondAttribute="bottom" id="1qR-B0-As7"/>
                             <constraint firstItem="BgJ-BB-kZr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8tJ-Du-hm4"/>
+                            <constraint firstItem="p98-bX-5e2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LoI-Ke-IFe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BgJ-BB-kZr" secondAttribute="trailing" id="SEK-5S-Hld"/>
+                            <constraint firstItem="p98-bX-5e2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WCp-nN-hp3"/>
                             <constraint firstItem="BgJ-BB-kZr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YUJ-rH-lzj"/>
                             <constraint firstItem="quO-R6-Q2c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d1l-si-InN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BgJ-BB-kZr" secondAttribute="bottom" id="fkk-SA-kTq"/>
@@ -275,6 +286,7 @@
                     <navigationItem key="navigationItem" title="GRČKI KINO" id="AOJ-YR-kWc"/>
                     <connections>
                         <outlet property="drawTableView" destination="BgJ-BB-kZr" id="nHM-aI-Jpv"/>
+                        <outlet property="spinner" destination="p98-bX-5e2" id="6Z8-aS-1b7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
